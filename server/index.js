@@ -7,7 +7,11 @@ import bookRoute from "./routes/bookRoute.js"
 ///connect to db
 /*
 
-
+{
+  origin: ["https://new-mern-front-end.vercel.app"],
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials:true,
+}
 */
 
 
@@ -17,11 +21,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Anis World mohamed!')
 })
-app.use(cors({
-  origin: ["https://new-mern-front-end.vercel.app"],
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials:true,
-}))
+app.use(cors())
 app.use("/books",bookRoute);
 //
   // !request.body.author||
