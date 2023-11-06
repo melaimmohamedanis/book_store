@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(()=>{
     setLoading(true);
     axios
-    .get('https://new-mern-server4.vercel.app/anis,headers: {
+    .get('https://new-mern-server4.vercel.app/books,headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
     },
@@ -31,8 +31,7 @@ const Home = () => {
   },[]);
   const navigate=useNavigate();
  
-
-//console.log("books",books)
+console.log("books",books)
   return (
     
     <div className='p-4'> 
