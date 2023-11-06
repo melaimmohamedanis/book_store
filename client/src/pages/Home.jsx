@@ -47,6 +47,9 @@ console.log("books",books)
     <Link to='/createbook'>
     <MdOutlineAddBox className='text-sky-800 text-4xl'/>
     </Link>
+        <Link to='/createbook'>
+    <MdOutlineAddBox className='text-sky-800 text-4xl'/>
+    </Link>
     </div>
     {loading ?(
       <Spiner></Spiner>
