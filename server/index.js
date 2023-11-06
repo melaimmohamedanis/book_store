@@ -31,8 +31,18 @@ app.use(function (req, res, next) {
   next();
 });
 app.get('/', (req, res) => {
-   res.header("Access-Control-Allow-Origin", "*");
   res.send('Anis World mohamed!');
+});
+app.get("/anis",async (req,res)=>{
+    try {
+        const books=await Book.find({});
+        return res.status(200).json(
+          { count:books.length,
+            data:books})
+        
+    } catch (error) {
+        
+    }
 });
 app.use("/books",bookRoute);
 //
