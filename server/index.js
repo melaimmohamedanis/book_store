@@ -18,8 +18,9 @@ app.get('/', (req, res) => {
   res.send('Anis World mohamed!')
 })
 app.use(cors({
-  "origin": "https://new-mern-front-end.vercel.app",
-  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  origin: "https://new-mern-front-end.vercel.app",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials:true
 }))
 app.use("/books",bookRoute);
 //
