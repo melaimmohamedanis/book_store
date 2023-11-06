@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 })
 app.use(cors(
 {
-  origin: ["https://new-mern-front-end.vercel.app"],
+  origin:"*",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials:true,
 }
