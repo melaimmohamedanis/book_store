@@ -31,7 +31,8 @@ app.use(function (req, res, next) {
   next();
 });
 app.get('/', (req, res) => {
-  res.send('Anis World mohamed!')
+   res.header("Access-Control-Allow-Origin", "*");
+  res.send('Anis World mohamed!');
 });
 app.use("/books",bookRoute);
 //
