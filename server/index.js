@@ -17,7 +17,12 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Anis World!')
 })
-app.use(cors())
+app.use(cors({
+  "origin": "https://new-mern-front-end.vercel.app/",
+  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "preflightContinue": false,
+  "optionsSuccessStatus": 204
+}))
 app.use("/books",bookRoute);
 //
   // !request.body.author||
