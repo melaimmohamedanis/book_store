@@ -17,19 +17,21 @@ import bookRoute from "./routes/bookRoute.js"
 
 const app = express();
 const port = 3000
-app.use(express.json());
-
-app.use(cors(
-{
-  origin:"*",
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials:true,
-}
-));
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   next();
 });
+app.use(express.json());
+
+app.use(cors(
+{
+origin: '*',
+    methods: '*',
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+}
+));
+
 app.get('/', (req, res) => {
   res.send('Anis World mohamed!');
 });
