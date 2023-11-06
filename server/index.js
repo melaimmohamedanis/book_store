@@ -21,8 +21,6 @@ app.use(cors({
   origin: ["https://new-mern-front-end.vercel.app"],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials:true,
-  'Access-Control-Allow-Credentials':true
- 
 }))
 app.use("/books",bookRoute);
 //
