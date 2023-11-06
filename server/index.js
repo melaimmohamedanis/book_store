@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
   res.send('Anis World mohamed!')
 })
 app.use(cors(
-  origin:"*"
+  {origin:"*"}
 ))
 app.use("/books",bookRoute);
 //
