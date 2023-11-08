@@ -4,40 +4,16 @@ import mongoose from "mongoose";
 import cors from"cors";
 import { Book } from "./models/bookmodel.js";
 import bookRoute from "./routes/bookRoute.js"
-///connect to db
-/*
-
-{
-  origin: ["https://new-mern-front-end.vercel.app"],
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials:true,
-}
-*/
-
 
 const app = express();
 const port = 3000
-/*app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
 
 app.use(cors(
 {
-origin: '*',
-    methods: '*',
+origin: 'https://new-mern-frontend.vercel.app',
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
-}
-));
-*/
-app.use(cors(
-{
-origin: 'https://new-mern-frontend.vercel.app',
-    methods: '*',
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: false,
 }
 ));
 app.get('/', (req, res) => {
