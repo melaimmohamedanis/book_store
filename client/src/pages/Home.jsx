@@ -11,14 +11,17 @@ const Home = () => {
   const [books,setBooks]=useState([]);
   const [loading,setLoading]=useState(false);
   const [showlist,setShowList]=useState(false);
-  useEffect(()=>{
-    setLoading(true);
-    axios
-    .get('https://new-mern-server.vercel.app/books',headers: {
+  */
+  ,headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
     },
     withCredentials: true)
+*/
+  useEffect(()=>{
+    setLoading(true);
+    axios
+    .get('https://new-mern-server.vercel.app/books')
     .then((response)=>{
       setBooks(response.data.data);
       setLoading(false);
