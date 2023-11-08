@@ -33,8 +33,7 @@ console.log("books",books)
     
     <div className='p-4'> 
     <div className="flex justify-center items-center gap-x-4">
-      <button className="bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg" onClick={()=>setShowList(true)}>list</button>
-        <button className="bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg" onClick={()=>setShowList(true)}>list</button>
+   *     <button className="bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg" onClick={()=>setShowList(true)}>list</button>
       <button className="bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg" onClick={()=>setShowList(false)}>card</button>
  
     </div>
