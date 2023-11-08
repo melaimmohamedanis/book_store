@@ -34,14 +34,14 @@ origin: '*',
 */
 app.use(cors(
 {
-origin: '*',
+origin: 'https://new-mern-frontend.vercel.app',
     methods: '*',
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: false,
 }
 ));
 app.get('/', (req, res) => {
-  res.send('Anis World !');
+  res.send('Anis Worldffff !');
 });
 app.get("/anis",async (req,res)=>{
     try {
