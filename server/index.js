@@ -17,7 +17,7 @@ origin: 'https://new-mern-frontend.vercel.app',
 }
 ));
 app.get('/', (req, res) => {
-  res.send('Anis Worldffff !');
+  res.send('Anis Worldddddffff !');
 });
 app.get("/anis",async (req,res)=>{
     try {
