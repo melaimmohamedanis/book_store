@@ -11,13 +11,7 @@ const Home = () => {
   const [books,setBooks]=useState([]);
   const [loading,setLoading]=useState(false);
   const [showlist,setShowList]=useState(false);
-  */
-  ,headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Content-Type': 'application/json',
-    },
-    withCredentials: true)
-*/
+ 
   useEffect(()=>{
     setLoading(true);
     axios
