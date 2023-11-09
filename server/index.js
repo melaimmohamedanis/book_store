@@ -19,17 +19,7 @@ origin: 'https://new-mern-frontend.vercel.app',
 app.get('/', (req, res) => {
   res.send('Anis Worldddddffff !');
 });
-app.get("/anis",async (req,res)=>{
-    try {
-        const books=await Book.find({});
-        return res.status(200).json(
-          { count:books.length,
-            data:books})
-        
-    } catch (error) {
-        
-    }
-});
+
 app.use("/books",bookRoute);
 //
   // !request.body.author||
