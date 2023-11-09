@@ -3,6 +3,7 @@ import { Book } from "../models/bookmodel.js";
 const router =express.Router();
 router.post('/',async (request,response)=>{
     try {
+        console.log("body",request.body)
         if(!request.body.title)
           {
                 return response.status(400).send({
