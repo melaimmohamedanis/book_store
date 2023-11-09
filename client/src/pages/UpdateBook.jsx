@@ -12,7 +12,7 @@ const UpdateBook = () => {
   const {id}=useParams();
   useEffect(() => {
     setLoading(true);
-    axios.get(`https://new-mern-server4.vercel.app/${id}`)
+    axios.get(`https://server-u5b8.onrender.com/${id}`)
     .then((response)=>{
       setTitle(response.data.title);
       setAuthor(response.data.author);
