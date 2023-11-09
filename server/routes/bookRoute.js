@@ -4,7 +4,7 @@ const router =express.Router();
 router.post('/',async (request,response)=>{
     try {
         console.log("body",request.body)
-        if(!request?.body?.title)
+        if(!request.body?.title)
           {
                 return response.status(400).send({
                     message:'Send all required fileds:title,author,publishYear'
@@ -18,7 +18,7 @@ router.post('/',async (request,response)=>{
             const book=await Book.create(newbook);
             return response.status(201).send(book);
     } catch (error) {
-        console.log("errr",error)
+        console.log("erbbbbrr",error)
         
     }
 })
