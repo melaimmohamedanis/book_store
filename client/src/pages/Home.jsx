@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(()=>{
     setLoading(true);
     axios
-    .get('https://new-mern-server.vercel.app/books')
+    .get('https://server-u5b8.onrender.com/books')
     .then((response)=>{
       setBooks(response.data.data);
       setLoading(false);
