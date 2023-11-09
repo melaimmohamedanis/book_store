@@ -10,7 +10,7 @@ const SingleBook = () => {
   useEffect(() => {
    setLoading(true);
    axios
-   .get(`https://new-mern-server4.vercel.app/${id}`)
+   .get(`https://server-u5b8.onrender.com/${id}`)
   
     .then ((response) => {
       setBook(response.data)
