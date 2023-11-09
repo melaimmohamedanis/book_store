@@ -32,7 +32,7 @@ app.listen(port, () => {
 
 const db=async()=>{
     try {
-        const con=await mongoose.connect("mongodb://localhost:27017/mern",{
+        const con=await mongoose.connect(MONGOURL,{
             useNewUrlParser:true,useUnifiedTopology:true
         })
         console.log(`MONGODB CONNECTED`)
