@@ -7,7 +7,7 @@ import bookRoute from "./routes/bookRoute.js"
 
 const app = express();
 const port = 3000
-
+app.use(express.json());
 app.use(cors(
 {
 origin: 'https://new-mern-frontend.vercel.app',
