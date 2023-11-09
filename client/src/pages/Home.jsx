@@ -13,7 +13,7 @@ const Home = () => {
   const [showlist,setShowList]=useState(false);
  
   useEffect(()=>{
-    setLoading(true);
+
     axios
     .get('https://server-u5b8.onrender.com/books')
     .then((response)=>{
