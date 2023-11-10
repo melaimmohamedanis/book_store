@@ -15,6 +15,8 @@ const SingleBook = () => {
     .then ((response) => {
       setBook(response.data)
       setLoading(false);
+       console.log(response.data);
+       console.log(error);
     }).catch((error)=>{
       console.log(error);
       setLoading(false);
