@@ -12,7 +12,7 @@ const SingleBook = () => {
   useEffect(() => {
    setLoading(true);
    axios
-   .get(`https://server-u5b8.onrender.com/${id}`)
+   .get(`https://server-u5b8.onrender.com/books/${id}`)
   
     .then ((response) => {
       setBook(response.data)
