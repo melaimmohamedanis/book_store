@@ -7,6 +7,8 @@ const SingleBook = () => {
   const [book,setBook]=useState({});
   const [loading,setLoading]=useState(false);
   const {id}=useParams();
+  console.log("id1",id);
+   console.log("id2",{id});
   useEffect(() => {
    setLoading(true);
    axios
