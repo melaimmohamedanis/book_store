@@ -28,7 +28,7 @@ const SingleBook = () => {
       <h1 className="text-3xl my-4">Show Book</h1>
       {loading ? (<Spiner/>
       ):(
-      {book ? (   <div className="flex flex-col border-2
+         book ? (<div className="flex flex-col border-2
          border-sky-400 rounded-xl w-fit p-4">
           <div className="my-4">
             <span className='text-xl mr-4 text-gray-500'>Id</span>
@@ -59,10 +59,9 @@ const SingleBook = () => {
           </div>
        
 
-         </div>):(<h1>not book</h1>)}
+         </div>):( <h1>no book</h1> )
       )}
-    </div>
-  )
+    </div>  )
 }
 
 export default SingleBook
